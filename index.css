@@ -1,0 +1,19 @@
+/* carreras.css */
+
+.card-carrera {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-carrera:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-carrera {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.lista-carrera li::marker {
+  color: #1D4ED8; /* azul Tailwind */
+}

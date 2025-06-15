@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -9,87 +9,100 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
+  <!-- Header -->
   <header class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <a href="../index.html" class="text-xl font-bold text-blue-700">ITSC</a>
       <nav class="hidden md:flex space-x-6">
         <a href="../index.html" class="hover:text-blue-600">Inicio</a>
         <a href="#" class="text-blue-600 font-semibold">Carreras</a>
-        <a href="../contacto.html" class="hover:text-blue-600">Contacto</a>
+         <a href="contacto.html" class="hover:text-blue-600">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto py-10 px-4">
-    <h1 class="text-4xl font-extrabold mb-6 text-blue-800 text-center">Tecnicatura Superior en Administración</h1>
+  <!-- Título -->
+  <main class="max-w-5xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-extrabold text-blue-800 mb-8 text-center">Tecnicatura Superior en Administración</h1>
 
-    <section class="mb-12">
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center">
-        La carrera de Administración forma profesionales capaces de gestionar eficazmente recursos humanos, financieros y materiales en organizaciones públicas o privadas.
-      </p>
-    </section>
+    <!-- Buscador -->
+    <div class="mb-6 text-center">
+      <input type="text" id="searchInput" placeholder="Buscar materia..." class="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
 
-    <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-4 text-blue-700 text-center">Perfil Profesional</h2>
-      <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed text-center">
-        El egresado estará preparado para colaborar en la planificación, organización y control de actividades administrativas, con conocimientos sólidos en contabilidad, marketing, legislación, logística y sistemas de información.
-      </p>
-    </section>
+    <!-- Tabla de Plan de Estudios -->
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm text-gray-800 border border-gray-300" id="materiasTable">
+        <thead class="bg-blue-700 text-white">
+          <tr>
+            <th class="py-2 px-4 text-center">Año</th>
+            <th class="py-2 px-4 text-left">Espacio Curricular</th>
+            <th class="py-2 px-4 text-center">Régimen</th>
+            <th class="py-2 px-4 text-left">Correlativas</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
 
-    <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-6 text-blue-700 text-center">Plan de Estudios</h2>
-      <div class="overflow-x-auto">
-        <table class="min-w-full border text-sm bg-white shadow-md rounded-xl overflow-hidden">
-          <thead class="bg-blue-700 text-white">
-            <tr>
-              <th class="px-4 py-2">Año</th>
-              <th class="px-4 py-2">Espacio Curricular</th>
-              <th class="px-4 py-2">Régimen</th>
-              <th class="px-4 py-2">Correlativas</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-200">
-            <!-- 1° Año -->
-            <tr class="bg-gray-100 font-semibold"><td colspan="4" class="text-center py-2">Primer Año</td></tr>
-            <tr><td class="px-4 py-2">1°</td><td class="px-4 py-2">Metodologías para la Administración de Proyectos</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">-</td></tr>
-            <tr><td></td><td class="px-4 py-2">Tecnología de la Información y la Comunicación I</td><td class="px-4 py-2">1° Bimestre</td><td class="px-4 py-2">-</td></tr>
-            <tr><td></td><td class="px-4 py-2">Sociología General</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">-</td></tr>
-            <tr><td></td><td class="px-4 py-2">Tecnología de la Información y la Comunicación II</td><td class="px-4 py-2">2° Bimestre</td><td class="px-4 py-2">TIC I</td></tr>
-            <tr><td></td><td class="px-4 py-2">Tecnología de la Información y la Comunicación III</td><td class="px-4 py-2">3° Bimestre</td><td class="px-4 py-2">TIC II</td></tr>
-            <tr><td></td><td class="px-4 py-2">Administración General</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">-</td></tr>
-            <tr><td></td><td class="px-4 py-2">Tecnología de la Información y la Comunicación IV</td><td class="px-4 py-2">4° Bimestre</td><td class="px-4 py-2">TIC III</td></tr>
-            <tr><td></td><td class="px-4 py-2">Inglés Técnico</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">-</td></tr>
-            <tr><td></td><td class="px-4 py-2">Sistemas de Información Contable I</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">-</td></tr>
+          <!-- PRIMER AÑO -->
+          <tr><td class="text-center">1°</td><td>Administración General</td><td class="text-center">Anual</td><td>-</td></tr>
+          <tr><td class="text-center">1°</td><td>Derecho</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
+          <tr><td class="text-center">1°</td><td>Economía</td><td class="text-center">Anual</td><td>-</td></tr>
+          <tr><td class="text-center">1°</td><td>Informática I</td><td class="text-center">Anual</td><td>-</td></tr>
+          <tr><td class="text-center">1°</td><td>Matemática</td><td class="text-center">Anual</td><td>-</td></tr>
+          <tr><td class="text-center">1°</td><td>Psicología Organizacional</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
+          <tr><td class="text-center">1°</td><td>Sociología</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
+          <tr><td class="text-center">1°</td><td>Comunicación Institucional</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
 
-            <!-- 2° Año -->
-            <tr class="bg-gray-100 font-semibold"><td colspan="4" class="text-center py-2">Segundo Año</td></tr>
-            <tr><td>2°</td><td class="px-4 py-2">Sistemas Administrativos</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">Administración General</td></tr>
-            <tr><td></td><td class="px-4 py-2">Derecho Económico y Legislación Tributaria</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">Sociología General</td></tr>
-            <tr><td></td><td class="px-4 py-2">Matemática Aplicada</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">-</td></tr>
-            <tr><td></td><td class="px-4 py-2">Sistemas de Información Contable II</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">Sistemas Contables I</td></tr>
-            <tr><td></td><td class="px-4 py-2">Estadística Aplicada</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">Inglés Técnico, TIC IV, Matemática Aplicada</td></tr>
-            <tr><td></td><td class="px-4 py-2">Costos, Logística y Gestión de Producción</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">Metodologías, Estadística, Contable II</td></tr>
-            <tr><td></td><td class="px-4 py-2">Gestión Comercial y Ventas</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">Metodologías, Contable II</td></tr>
-            <tr><td></td><td class="px-4 py-2">Práctica Profesionalizante I</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">Estadística, Comercial</td></tr>
+          <!-- SEGUNDO AÑO -->
+          <tr><td class="text-center">2°</td><td>Administración de Recursos Humanos</td><td class="text-center">Anual</td><td>Psicología Organizacional</td></tr>
+          <tr><td class="text-center">2°</td><td>Administración Financiera</td><td class="text-center">Anual</td><td>Economía</td></tr>
+          <tr><td class="text-center">2°</td><td>Comercialización</td><td class="text-center">Anual</td><td>Administración General</td></tr>
+          <tr><td class="text-center">2°</td><td>Contabilidad I</td><td class="text-center">Anual</td><td>Matemática</td></tr>
+          <tr><td class="text-center">2°</td><td>Estadística Aplicada</td><td class="text-center">Anual</td><td>Matemática</td></tr>
+          <tr><td class="text-center">2°</td><td>Informática II</td><td class="text-center">Anual</td><td>Informática I</td></tr>
+          <tr><td class="text-center">2°</td><td>Legislación Laboral</td><td class="text-center">Cuatrimestral</td><td>Derecho</td></tr>
+          <tr><td class="text-center">2°</td><td>Metodología de la Investigación</td><td class="text-center">Cuatrimestral</td><td>Sociología</td></tr>
 
-            <!-- 3° Año -->
-            <tr class="bg-gray-100 font-semibold"><td colspan="4" class="text-center py-2">Tercer Año</td></tr>
-            <tr><td>3°</td><td class="px-4 py-2">Derecho Laboral y Seguridad Social</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">Derecho Económico</td></tr>
-            <tr><td></td><td class="px-4 py-2">Comercialización y Marketing Digital</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">TIC IV, Comercial</td></tr>
-            <tr><td></td><td class="px-4 py-2">Administración Financiera</td><td class="px-4 py-2">1° Cuatrimestre</td><td class="px-4 py-2">Costos, Comercial</td></tr>
-            <tr><td></td><td class="px-4 py-2">Administración de RRHH</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">Metodologías, Derecho, Comercial</td></tr>
-            <tr><td></td><td class="px-4 py-2">Práctica Profesionalizante II</td><td class="px-4 py-2">2° Cuatrimestre</td><td class="px-4 py-2">Práctica I, RRHH</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+          <!-- TERCER AÑO -->
+          <tr><td class="text-center">3°</td><td>Administración Estratégica</td><td class="text-center">Anual</td><td>Administración General - Comercialización</td></tr>
+          <tr><td class="text-center">3°</td><td>Contabilidad II</td><td class="text-center">Anual</td><td>Contabilidad I</td></tr>
+          <tr><td class="text-center">3°</td><td>Costos</td><td class="text-center">Anual</td><td>Contabilidad I</td></tr>
+          <tr><td class="text-center">3°</td><td>Práctica Profesionalizante</td><td class="text-center">Anual</td><td>Metodología - Administración Financiera</td></tr>
+          <tr><td class="text-center">3°</td><td>Proyecto y Formulación</td><td class="text-center">Anual</td><td>Estadística Aplicada</td></tr>
+          <tr><td class="text-center">3°</td><td>Relaciones Públicas</td><td class="text-center">Cuatrimestral</td><td>Comunicación Institucional</td></tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Botón Volver y PDF -->
+    <div class="text-center mt-8 space-x-4">
+      <a href="index.html" class="text-blue-600 hover:underline">← Volver al listado de carreras</a>
+      <button onclick="window.print()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Imprimir PDF</button>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-gray-900 text-white py-8 mt-20">
-    <div class="max-w-6xl mx-auto px-4 text-center">
+    <div class="max-w-7xl mx-auto px-4 text-center">
       <p class="text-sm">© 2025 Instituto Técnico Superior Córdoba. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- JS para búsqueda -->
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      const value = this.value.toLowerCase();
+      const rows = document.querySelectorAll('#materiasTable tbody tr');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(value) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
+
+
+
 

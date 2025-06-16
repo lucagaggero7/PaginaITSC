@@ -77,15 +77,17 @@
     <section class="mb-12">
       <h2 class="text-2xl font-bold text-blue-700 mb-4">Proyectos y Novedades</h2>
       <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li>Jornadas de RCP y primeros auxilios en escuelas e instituciones :contentReference[oaicite:3]{index=3}</li>
-        <li>Talleres de alimentación saludable en escuelas anexas :contentReference[oaicite:4]{index=4}</li>
-        <li>Visitas educativas a museos y hospitales, y construcción de maquetas anatómicas :contentReference[oaicite:5]{index=5}</li>
+        <li>Jornadas de RCP y primeros auxilios en escuelas e instituciones</li>
+        <li>Talleres de alimentación saludable en escuelas anexas</li>
+        <li>Visitas educativas a museos y hospitales, y construcción de maquetas anatómicas</li>
       </ul>
     </section>
 
     <!-- Botón de volver -->
-    <div class="text-center">
-      <a href="index.html" class="hover:text-blue-600">← Volver al listado de carreras</a>
+      <div class="text-center mt-8 space-x-4">
+      <a href="../index.html" class="hover:text-blue-600">Volver</a>
+      <!-- <a href="index.html" class="text-blue-600 hover:underline">← Volver al listado de carreras</a> -->
+      <button onclick="window.print()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Imprimir PDF</button>
     </div>
   </main>
 
@@ -95,5 +97,17 @@
       <p class="text-sm">© 2025 Instituto Técnico Superior Córdoba. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- JS para búsqueda -->
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      const value = this.value.toLowerCase();
+      const rows = document.querySelectorAll('#materiasTable tbody tr');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(value) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html> 

@@ -4,11 +4,13 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\leo82\\source\\repos\\vsc\\PaginaITSC\\index.html"
+            "file": "c:\\User\\Usuario\\One Drive\\Escritorio\\PaginaITSC\\index.html"
+
         }
     ]
 }

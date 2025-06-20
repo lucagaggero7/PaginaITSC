@@ -17,3 +17,9 @@
 .lista-carrera li::marker {
   color: #1D4ED8; /* azul Tailwind */
 }
+
+.icon {
+  fill: #777;
+  width: 1rem;
+  height: 1rem;
+}

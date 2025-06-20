@@ -49,50 +49,53 @@
       <input type="text" id="searchInput" placeholder="Buscar materia..." class="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
     </div>
 
+   
+
     <!-- Tabla de Plan de Estudios -->
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm text-gray-800 border border-gray-300" id="materiasTable">
-        <thead class="bg-blue-700 text-white">
-          <tr>
-            <th class="py-2 px-4 text-center">Año</th>
-            <th class="py-2 px-4 text-left">Espacio Curricular</th>
-            <th class="py-2 px-4 text-center">Régimen</th>
-            <th class="py-2 px-4 text-left">Correlativas</th>
-          </tr>
-        </thead>
-        <tbody class="bg-white">
+    <div class="overflow-x-auto mt-8">
+  <table class="min-w-full border border-gray-300 shadow-md rounded-lg overflow-hidden text-sm" id="materiasTable">
+    <thead class="bg-blue-700 text-white">
+      <tr>
+        <th class="px-4 py-3 text-center">Año</th>
+        <th class="px-4 py-3 text-left">Espacio Curricular</th>
+        <th class="px-4 py-3 text-center">Régimen</th>
+        <th class="px-4 py-3 text-left">Correlativas</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200 bg-white">
+      
+      <!-- PRIMER AÑO -->
+      <tr><td class="text-center px-4 py-2">1°</td><td>Programación I</td><td class="text-center">Anual</td><td>-</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Base de Datos</td><td class="text-center">Anual</td><td>-</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Elementos de Matemática y Lógica</td><td class="text-center">Anual</td><td>-</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Sistemas y Organizaciones I</td><td class="text-center">Anual</td><td>-</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Aproximación al mundo del trabajo</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Competencias Comunicacionales I</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Competencias Comunicacionales II</td><td class="text-center">Cuatrimestral</td><td>Competencias Comunicacionales I</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Ética y Deontología Profesional</td><td class="text-center">Cuatrimestral</td><td>Aproximación al mundo del trabajo</td></tr>
+      <tr><td class="text-center px-4 py-2">1°</td><td>Arquitectura de las Computadoras</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
 
-          <!-- PRIMER AÑO -->
-          <tr><td class="text-center">1°</td><td>Programacion I</td><td class="text-center">Anual</td><td>-</td></tr>
-          <tr><td class="text-center">1°</td><td>Base de Datos</td><td class="text-center">Anual</td><td>-</td></tr>
-          <tr><td class="text-center">1°</td><td>Elementos de Matemática y Lógica</td><td class="text-center">Anual</td><td>-</td></tr>
-          <tr><td class="text-center">1°</td><td>Sistemas y Organizaciones I</td><td class="text-center">Anual</td><td>-</td></tr>
-          <tr><td class="text-center">1°</td><td>Aproximación al mundo del trabajo</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
-          <tr><td class="text-center">1°</td><td>Competencias Comunicacionales II</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
-          <tr><td class="text-center">1°</td><td>Competencias Comunicacionales I</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
-          <tr><td class="text-center">1°</td><td>Etica y Deontología Profesional</td><td class="text-center">Cuatrimestral</td><td>-</td></tr>
+      <!-- SEGUNDO AÑO -->
+      <tr><td class="text-center px-4 py-2">2°</td><td>Inglés</td><td class="text-center">Anual</td><td>-</td></tr>
+      <tr><td class="text-center px-4 py-2">2°</td><td>Modelado y Arquitectura de Software</td><td class="text-center">Anual</td><td>Programación I, Sistemas y Organizaciones I</td></tr>
+      <tr><td class="text-center px-4 py-2">2°</td><td>Programación II</td><td class="text-center">Anual</td><td>Base de Datos, Programación I</td></tr>
+      <tr><td class="text-center px-4 py-2">2°</td><td>Estadística y Probabilidad Aplicada</td><td class="text-center">Anual</td><td>Elementos de Matemática y Lógica</td></tr>
+      <tr><td class="text-center px-4 py-2">2°</td><td>Práctica Profesional I</td><td class="text-center">Anual</td><td>Elementos de Matemática y Lógica, Programación I, Competencias Comunicacionales II, Ética y Deontología Profesional</td></tr>
+      <tr><td class="text-center px-4 py-2">2°</td><td>Sistemas Operativos</td><td class="text-center">Cuatrimestral</td><td>Arquitectura de las Computadoras</td></tr>
+      <tr><td class="text-center px-4 py-2">2°</td><td>Redes</td><td class="text-center">Cuatrimestral</td><td>Sistemas Operativos</td></tr>
 
-          <!-- SEGUNDO AÑO -->
-          <tr><td class="text-center">2°</td><td>Inglés</td><td class="text-center">Anual</td><td>Psicología Organizacional</td></tr>
-          <tr><td class="text-center">2°</td><td>Modelado y Arquitectura de Software</td><td class="text-center">Anual</td><td>Economía</td></tr>
-          <tr><td class="text-center">2°</td><td></td><td class="text-center">Anual</td><td>Administración General</td></tr>
-          <tr><td class="text-center">2°</td><td></td><td class="text-center">Anual</td><td>Matemática</td></tr>
-          <tr><td class="text-center">2°</td><td></td><td class="text-center">Anual</td><td>Matemática</td></tr>
-          <tr><td class="text-center">2°</td><td></td><td class="text-center">Anual</td><td>Informática I</td></tr>
-          <tr><td class="text-center">2°</td><td></td><td class="text-center">Cuatrimestral</td><td>Derecho</td></tr>
-          <tr><td class="text-center">2°</td><td></td><td class="text-center">Cuatrimestral</td><td>Sociología</td></tr>
+      <!-- TERCER AÑO -->
+      <tr><td class="text-center px-4 py-2">3°</td><td>Ingeniería de Software</td><td class="text-center">Anual</td><td>Modelado y Arquitectura de Software</td></tr>
+      <tr><td class="text-center px-4 py-2">3°</td><td>Programación III</td><td class="text-center">Anual</td><td>Programación I, Base de Datos</td></tr>
+      <tr><td class="text-center px-4 py-2">3°</td><td>Práctica Profesional II</td><td class="text-center">Anual</td><td>Práctica Profesional I, Estadística y Probabilidad Aplicada, Modelado y Arquitectura de Software, Programación II</td></tr>
+      <tr><td class="text-center px-4 py-2">3°</td><td>Interfaz de Usuario</td><td class="text-center">Anual</td><td>Sistemas y Organizaciones I</td></tr>
+      <tr><td class="text-center px-4 py-2">3°</td><td>Gestión de Proyectos</td><td class="text-center">Cuatrimestral</td><td>Práctica Profesional I</td></tr>
+      <tr><td class="text-center px-4 py-2">3°</td><td>Verificación y Validación de Programas</td><td class="text-center">Cuatrimestral</td><td>Programación II</td></tr>
 
-          <!-- TERCER AÑO -->
-          <tr><td class="text-center">3°</td><td>Administración Estratégica</td><td class="text-center">Anual</td><td>Administración General - Comercialización</td></tr>
-          <tr><td class="text-center">3°</td><td>Contabilidad II</td><td class="text-center">Anual</td><td>Contabilidad I</td></tr>
-          <tr><td class="text-center">3°</td><td>Costos</td><td class="text-center">Anual</td><td>Contabilidad I</td></tr>
-          <tr><td class="text-center">3°</td><td>Práctica Profesionalizante</td><td class="text-center">Anual</td><td>Metodología - Administración Financiera</td></tr>
-          <tr><td class="text-center">3°</td><td>Proyecto y Formulación</td><td class="text-center">Anual</td><td>Estadística Aplicada</td></tr>
-          <tr><td class="text-center">3°</td><td>Relaciones Públicas</td><td class="text-center">Cuatrimestral</td><td>Comunicación Institucional</td></tr>
+    </tbody>
+  </table>
+</div>
 
-        </tbody>
-      </table>
-    </div>
 
     <!-- Botón Volver y PDF -->
     <div class="text-center mt-8 space-x-4">

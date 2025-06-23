@@ -1,11 +1,11 @@
-<!-- carreras.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carreras - ITSC</title>
+  <title>Inicio - ITSC</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css"> 
 </head>
 <body class="bg-gray-50 text-gray-800">
   <header class="bg-white shadow-md">
@@ -13,7 +13,24 @@
       <a href="index.html" class="text-xl font-bold text-blue-700">ITSC</a>
       <nav class="hidden md:flex space-x-6">
         <a href="index.html" class="hover:text-blue-600">Inicio</a>
-        <a href="carreras.html" class="hover:text-blue-600">Carreras</a>
+        
+        <div class="relative group">
+          <a href="#" class="hover:text-blue-600">Carreras</a> 
+          <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10">
+            <a href="carreras/Administracion.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Administración</a>
+            <a href="carreras/Recursos-Humanos.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Recursos Humanos</a>
+            <a href="carreras/Desarrollo-de-Software.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Desarrollo de Software</a>
+            <a href="carreras/Enfermeria.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Enfermería</a>
+            <a href="carreras/Gestion-Ambiental.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Gestión Ambiental</a>
+            <a href="carreras/Gestion-y-Mantenimiento-Industrial.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Gestión y Mantenimiento Industrial</a>
+            <a href="carreras/Hemoterapia-e-Inmunologia.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Hemoterapia e Inmunología</a>
+            <a href="carreras/Higiene-y-Seguridad.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Higiene y Seguridad en el Trabajo</a>
+            <a href="carreras/Instrumentacion-Quirurgica.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Instrumentación Quirúrgica</a>
+            <a href="carreras/Optica-y-Contactologia.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Óptica y Contactología</a>
+            <a href="carreras/Protesis-Dental.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Prótesis Dental</a>
+            <a href="carreras/Tecnologia-y-Biotecnologia-de-Alimentos.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tecnología y Biotecnología de Alimentos</a>
+          </div>
+        </div>
         <a href="contacto.html" class="hover:text-blue-600">Contacto</a>
       </nav>
     </div>
@@ -25,116 +42,151 @@
   </main>
 
   <main class="max-w-7xl mx-auto py-10 px-4">
-    <h1 class="text-3xl font-bold mb-10 text-center">Carreras Técnicas Oficiales</h1>
+    <h1 class="text-4xl font-extrabold mb-12 text-center text-blue-800">¡Bienvenido al Instituto Técnico Superior Córdoba!</h1>
+    
+    <section class="text-center mb-16">
+        <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            En el Instituto Técnico Superior Córdoba te damos la bienvenida a nuestro espacio digital.
+            Aquí encontrarás toda la información necesaria para acompañarte en tu formación profesional.
+            Somos una comunidad comprometida con la excelencia, la innovación y el crecimiento de cada estudiante.
+            ¡Gracias por ser parte del cambio!
+        </p>
+    </section>
+
+    <h2 class="text-3xl font-bold mb-10 text-center">Nuestras Carreras Destacadas</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
-      <!-- Estructura html -->
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Administración</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Contabilidad, gestión de empresas, marketing, recursos humanos.</li>
-          <li><strong>Alcance:</strong> Gestión y apoyo en áreas administrativas tanto públicas como privadas.</li>
-          <li><strong>Duración:</strong> 3 años con título oficial de Técnico Superior.</li>
-        </ul>
-      </div>
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Recursos Humanos</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Comunicación organizacional, legislación laboral, gestión del talento.</li>
-          <li><strong>Alcance:</strong> Colaboración en procesos de selección, capacitación y administración de personal.</li>
-          <li><strong>Duración:</strong> 3 años con título oficial de Técnico Superior.</li>
-        </ul>
-      </div>
+      <a href="carreras/Administracion.html" class="block card-carrera">
+        <div id="administracion-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Administración</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Contabilidad, gestión de empresas, marketing, recursos humanos.</li>
+            <li><strong>Alcance:</strong> Gestión y apoyo en áreas administrativas tanto públicas como privadas.</li>
+            <li><strong>Duración:</strong> 3 años con título oficial de Técnico Superior.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Desarrollo de Software</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Programación, bases de datos, diseño de sistemas, redes, apps web y móviles.</li>
-          <li><strong>Alcance:</strong> Desarrollo y mantenimiento de software en múltiples plataformas.</li>
-          <li><strong>Duración:</strong> 3 años con título oficial de Técnico Superior.</li>
-        </ul>
-      </div>
+      <a href="carreras/Recursos-Humanos.html" class="block card-carrera">
+        <div id="recursos-humanos-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Recursos Humanos</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Comunicación organizacional, legislación laboral, gestión del talento.</li>
+            <li><strong>Alcance:</strong> Colaboración en procesos de selección, capacitación y administración de personal.</li>
+            <li><strong>Duración:</strong> 3 años con título oficial de Técnico Superior.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Enfermería</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Anatomía, enfermería clínica, salud pública, cuidados del paciente.</li>
-          <li><strong>Alcance:</strong> Atención primaria y asistencia sanitaria en instituciones públicas y privadas.</li>
-          <li><strong>Duración:</strong> 3 años con prácticas profesionales.</li>
-        </ul>
-      </div>
+      <a href="carreras/Desarrollo-de-Software.html" class="block card-carrera">
+        <div id="desarrollo-software-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Desarrollo de Software</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Programación, bases de datos, diseño de sistemas, redes, apps web y móviles.</li>
+            <li><strong>Alcance:</strong> Desarrollo y mantenimiento de software en múltiples plataformas.</li>
+            <li><strong>Duración:</strong> 3 años con título oficial de Técnico Superior.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Gestión Ambiental</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Ecología, impacto ambiental, legislación ambiental, energías renovables.</li>
-          <li><strong>Alcance:</strong> Diseño e implementación de planes de gestión ambiental.</li>
-          <li><strong>Duración:</strong> 3 años con título oficial.</li>
-        </ul>
-      </div>
+      <a href="carreras/Enfermeria.html" class="block card-carrera">
+        <div id="enfermeria-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Enfermería</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Anatomía, enfermería clínica, salud pública, cuidados del paciente.</li>
+            <li><strong>Alcance:</strong> Atención primaria y asistencia sanitaria en instituciones públicas y privadas.</li>
+            <li><strong>Duración:</strong> 3 años con prácticas profesionales.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Gestión y Mantenimiento Industrial</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Electrónica, mecánica, procesos industriales, mantenimiento preventivo.</li>
-          <li><strong>Alcance:</strong> Supervisión técnica y operativa de procesos productivos.</li>
-          <li><strong>Duración:</strong> 3 años con título oficial.</li>
-        </ul>
-      </div>
+      <a href="carreras/Gestion-Ambiental.html" class="block card-carrera">
+        <div id="gestion-ambiental-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Gestión Ambiental</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Ecología, impacto ambiental, legislación ambiental, energías renovables.</li>
+            <li><strong>Alcance:</strong> Diseño e implementación de planes de gestión ambiental.</li>
+            <li><strong>Duración:</strong> 3 años con título oficial.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Hemoterapia e Inmunología</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Biología, inmunohematología, bancos de sangre, bioseguridad.</li>
-          <li><strong>Alcance:</strong> Asistencia en procesos de transfusión y estudios inmunológicos.</li>
-          <li><strong>Duración:</strong> 3 años con prácticas en laboratorios.</li>
-        </ul>
-      </div>
+      <a href="carreras/Gestion-y-Mantenimiento-Industrial.html" class="block card-carrera">
+        <div id="gestion-mantenimiento-industrial-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Gestión y Mantenimiento Industrial</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Electrónica, mecánica, procesos industriales, mantenimiento preventivo.</li>
+            <li><strong>Alcance:</strong> Supervisión técnica y operativa de procesos productivos.</li>
+            <li><strong>Duración:</strong> 3 años con título oficial.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Higiene y Seguridad en el Trabajo</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Seguridad laboral, legislación, ergonomía, prevención de riesgos.</li>
-          <li><strong>Alcance:</strong> Diseño de planes de prevención de accidentes y control ambiental.</li>
-          <li><strong>Duración:</strong> 3 años con salida laboral inmediata.</li>
-        </ul>
-      </div>
+      <a href="carreras/Hemoterapia-e-Inmunologia.html" class="block card-carrera">
+        <div id="hemoterapia-inmunologia-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Hemoterapia e Inmunología</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Biología, inmunohematología, bancos de sangre, bioseguridad.</li>
+            <li><strong>Alcance:</strong> Asistencia en procesos de transfusión y estudios inmunológicos.</li>
+            <li><strong>Duración:</strong> 3 años con prácticas en laboratorios.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Instrumentación Quirúrgica</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Anatomía, técnicas quirúrgicas, esterilización, bioética.</li>
-          <li><strong>Alcance:</strong> Asistencia directa en quirófanos y organización de materiales estériles.</li>
-          <li><strong>Duración:</strong> 3 años con prácticas en hospitales.</li>
-        </ul>
-      </div>
+      <a href="carreras/Higiene-y-Seguridad.html" class="block card-carrera">
+        <div id="higiene-seguridad-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Higiene y Seguridad en el Trabajo</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Seguridad laboral, legislación, ergonomía, prevención de riesgos.</li>
+            <li><strong>Alcance:</strong> Diseño de planes de prevención de accidentes y control ambiental.</li>
+            <li><strong>Duración:</strong> 3 años con salida laboral inmediata.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Óptica y Contactología</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Optometría, contactología, anatomía ocular, lentes y cristales.</li>
-          <li><strong>Alcance:</strong> Atención y adaptación de lentes ópticos y de contacto.</li>
-          <li><strong>Duración:</strong> 3 años con prácticas clínicas.</li>
-        </ul>
-      </div>
+      <a href="carreras/Instrumentacion-Quirurgica.html" class="block card-carrera">
+        <div id="instrumentacion-quirurgica-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Instrumentación Quirúrgica</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Anatomía, técnicas quirúrgicas, esterilización, bioética.</li>
+            <li><strong>Alcance:</strong> Asistencia directa en quirófanos y organización de materiales estériles.</li>
+            <li><strong>Duración:</strong> 3 años con prácticas en hospitales.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Prótesis Dental</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Morfología dental, técnicas de laboratorio, materiales dentales.</li>
-          <li><strong>Alcance:</strong> Elaboración de piezas dentales y colaboración con odontólogos.</li>
-          <li><strong>Duración:</strong> 3 años con prácticas en laboratorios.</li>
-        </ul>
-      </div>
+      <a href="carreras/Optica-y-Contactologia.html" class="block card-carrera">
+        <div id="optica-contactologia-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Óptica y Contactología</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Optometría, contactología, anatomía ocular, lentes y cristales.</li>
+            <li><strong>Alcance:</strong> Atención y adaptación de lentes ópticos y de contacto.</li>
+            <li><strong>Duración:</strong> 3 años con prácticas clínicas.</li>
+          </ul>
+        </div>
+      </a>
 
-      <div class="bg-white shadow rounded-xl p-6">
-        <h2 class="text-2xl font-bold text-blue-700 mb-2">Tecnología y Biotecnología de Alimentos</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Programa:</strong> Microbiología, tecnología alimentaria, control de calidad.</li>
-          <li><strong>Alcance:</strong> Desarrollo y supervisión de procesos industriales de alimentos.</li>
-          <li><strong>Duración:</strong> 3 años con formación técnica y científica.</li>
-        </ul>
-      </div>
+      <a href="carreras/Protesis-Dental.html" class="block card-carrera">
+        <div id="protesis-dental-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Prótesis Dental</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Morfología dental, técnicas de laboratorio, materiales dentales.</li>
+            <li><strong>Alcance:</strong> Elaboración de piezas dentales y colaboración con odontólogos.</li>
+            <li><strong>Duración:</strong> 3 años con prácticas en laboratorios.</li>
+          </ul>
+        </div>
+      </a>
+
+      <a href="carreras/Tecnologia-y-Biotecnologia-de-Alimentos.html" class="block card-carrera">
+        <div id="tecnologia-biotecnologia-alimentos-summary" class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 titulo-carrera">Tecnología y Biotecnología de Alimentos</h3>
+          <ul class="list-disc list-inside space-y-1 lista-carrera">
+            <li><strong>Programa:</strong> Microbiología, tecnología alimentaria, control de calidad.</li>
+            <li><strong>Alcance:</strong> Desarrollo y supervisión de procesos industriales de alimentos.</li>
+            <li><strong>Duración:</strong> 3 años con formación técnica y científica.</li>
+          </ul>
+        </div>
+      </a>
     </div>
   </main>
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Administración - ITSC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="../index.html" class="text-xl font-bold text-blue-700">IT</a>
+        <nav class="hidden md:flex space-x-6">
+        <a href="../index.html" class="hover:text-blue-600">Inicio</a>
+        <a href="#" class="text-blue-600 font-semibold">Carreras</a>
+            <a href="contacto.html" class="hover:text-blue-600">Contacto</a>
+            <a href="nosotros.html" class="hover:text-blue-600">Nosotros</a>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Título -->
+    <main class="max-w-5xl mx-auto py-12 px-4">
+    <h1 class="text-2xl font-bold text-blue-700 mb-2 text-center">Tecnicatura Superior en Administración</h1>
+    
+    <!-- !-- Datos destacados  -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 mb-12">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="font-semibold text-lg mb-2">📜 Título y Resolución</h2>
+        <p>Tecnico Superior en Administración</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="font-semibold text-lg mb-2">⏳ Duración y Modalidad</h2>
+        <p>3 años, presencial con prácticas de 7 a 16 hs</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="font-semibold text-lg mb-2">🏫 Sedes y horarios</h2>
+        <ul class="list-disc list-inside">
+            <li>IPEM 360  Villa El Libertador (18:00 22:30)</li>
+            <li>I.P.E.M. 8  La France (18:00 22:30)</li>
+            <li>ITSC Alto Alberdi (8:30 13:30)</li>
+            <li>IPET 333 Villa Los Llanos (18:00 22:30)</li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- Buscador -->
+    <div class="mb-6 text-center">
+        <input type="text" id="searchInput" placeholder="Buscar materia..." class="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Tabla de Plan de Estudios -->
+    <div class="overflow-x-auto">
+        <table class="w-full text-sm text-gray-800 border border-gray-300" id="materiasTable">
+        <thead class="bg-blue-700 text-white">
+            <tr>
+                <th class="py-2 px-4 text-center">Año</th>
+                <th class="py-2 px-4 text-left">Espacio Curricular</th>
+                <th class="py-2 px-4 text-center">Régimen</th>
+                <th class="py-2 px-4 text-left">Correlativas</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white">
+
+            <!-- PRIMER AÑO -->
+            <tr><td class="text-center">1°</td><td>Herramientas Tecnológicas</td><td class="text-center">Anual</td><td>-</td></tr>
+            <tr><td class="text-center">1°</td><td>Inglés</td><td class="text-center">Anual</td><td>-</td></tr>
+            <tr><td class="text-center">1°</td><td>Fundamentos de Biología</td><td class="text-center">Anual</td><td>-</td></tr>
+            <tr><td class="text-center">1°</td><td>Química Ambiental</td><td class="text-center">Anual</td><td>-</td></tr>
+            <tr><td class="text-center">1°</td><td>Matemática y Estadística Aplicada</td><td class="text-center">Anual</td><td>-</td></tr>
+            <tr><td class="text-center">1°</td><td>Fundamentos de Ecología</td><td class="text-center">Anual</td><td>-</td></tr>
+            <tr><td class="text-center">1°</td><td>Física Aplicada</td><td class="text-center">Anual</td><td>-</td></tr>
+            <tr><td class="text-center">1°</td><td>Legislación Ambiental</td><td class="text-center">Anual</td><td>-</td></tr>
+
+            <!-- SEGUNDO AÑO -->
+            <tr><td class="text-center">2°</td><td>Economía Ambiental</td><td class="text-center">Anual</td><td>Psicología Organizacional</td></tr>
+            <tr><td class="text-center">2°</td><td>Administración Financiera</td><td class="text-center">Anual</td><td>Economía</td></tr>
+            <tr><td class="text-center">2°</td><td>Comercialización</td><td class="text-center">Anual</td><td>Administración General</td></tr>
+            <tr><td class="text-center">2°</td><td>Contabilidad I</td><td class="text-center">Anual</td><td>Matemática</td></tr>
+            <tr><td class="text-center">2°</td><td>Estadística Aplicada</td><td class="text-center">Anual</td><td>Matemática</td></tr>
+            <tr><td class="text-center">2°</td><td>Informática II</td><td class="text-center">Anual</td><td>Informática I</td></tr>
+            <tr><td class="text-center">2°</td><td>Legislación Laboral</td><td class="text-center">Cuatrimestral</td><td>Derecho</td></tr>
+            <tr><td class="text-center">2°</td><td>Metodología de la Investigación</td><td class="text-center">Cuatrimestral</td><td>Sociología</td></tr>
+
+            <!-- TERCER AÑO -->
+            <tr><td class="text-center">3°</td><td>Administración Estratégica</td><td class="text-center">Anual</td><td>Administración General - Comercialización</td></tr>
+            <tr><td class="text-center">3°</td><td>Contabilidad II</td><td class="text-center">Anual</td><td>Contabilidad I</td></tr>
+            <tr><td class="text-center">3°</td><td>Costos</td><td class="text-center">Anual</td><td>Contabilidad I</td></tr>
+            <tr><td class="text-center">3°</td><td>Práctica Profesionalizante</td><td class="text-center">Anual</td><td>Metodología - Administración Financiera</td></tr>
+            <tr><td class="text-center">3°</td><td>Proyecto y Formulación</td><td class="text-center">Anual</td><td>Estadística Aplicada</td></tr>
+            <tr><td class="text-center">3°</td><td>Relaciones Públicas</td><td class="text-center">Cuatrimestral</td><td>Comunicación Institucional</td></tr>
+
+        </tbody>
+        </table>
+    </div>
+
+    <!-- Botón Volver y PDF -->
+    <div class="text-center mt-8 space-x-4">
+        <a href="../index.html" class="hover:text-blue-600">Volver</a>
+        <!-- <a href="index.html" class="text-blue-600 hover:underline">← Volver al listado de carreras</a> -->
+        <button onclick="window.print()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Imprimir PDF</button>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm">© 2025 Instituto Técnico Superior Córdoba. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+
+    <!-- JS para búsqueda -->
+    <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+        const value = this.value.toLowerCase();
+        const rows = document.querySelectorAll('#materiasTable tbody tr');
+        rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(value) ? '' : 'none';
+        });
+    });
+    </script>
+</body>
+</html>

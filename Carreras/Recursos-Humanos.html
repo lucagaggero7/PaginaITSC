@@ -111,16 +111,20 @@
     </div>
   </footer>
 
-  <!-- JS para búsqueda -->
+   <!-- JS para búsqueda -->
   <script>
-    document.getElementById('searchInput').addEventListener('input', function () {
-      const value = this.value.toLowerCase();
-      const rows = document.querySelectorAll('#materiasTable tbody tr');
-      rows.forEach(row => {
-        const text = row.textContent.toLowerCase();
-        row.style.display = text.includes(value) ? '' : 'none';
-      });
+  function normalizeText(text) {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const value = normalizeText(this.value);
+    const rows = document.querySelectorAll('#materiasTable tbody tr');
+    rows.forEach(row => {
+      const text = normalizeText(row.textContent);
+      row.style.display = text.includes(value) ? '' : 'none';
     });
-  </script>
+  });
+</script>
 </body>
 </html>
